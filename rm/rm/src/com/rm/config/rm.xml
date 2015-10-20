@@ -1,0 +1,294 @@
+<rm>
+	<componentmodel key="rmModel">
+		<components key="equation">
+			<group>
+				<component key="equation.sr">
+					<att id="ATTR_EQUATION_DEP_VAR" name="Dependent Variable" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_INDEP_VAR" name="Independent Variable" type="textfield" discription="" editable=""
+						visible="true" />
+				</component>
+				<component key="equation.mr">
+					<!--
+						<att id="ATTR_EQUATION_DEP_VAR" name="Dependent Variable" type="textfield" discription="" editable=""
+						visible="true" />
+					-->
+
+				</component>
+				<component key="equation.glm">
+					<att id="ATTR_EQUATION_FUNC_FAMILY" name="Family" type="selection" discription="" editable="" visible="true"
+						value="1">
+						<option id="ATTR_EQUATION_FUNC_FAMILY_BINOM" value="" name="Please choose ..." />
+						<option id="ATTR_EQUATION_FUNC_FAMILY_BINOM" value="binomial" name="binomial" />
+						<option id="ATTR_EQUATION_FUNC_FAMILY_CAUCHY" value="gaussian" name="gaussian" />
+						<option id="ATTR_EQUATION_FUNC_FAMILY_GEOM" value="Gamma" name="Gamma" />
+						<option id="ATTR_EQUATION_FUNC_FAMILY_POIS" value="Poisson" name="poisson" />
+					</att>
+					<att id="ATTR_EQUATION_DATA_VAR" name="Data Variable" type="textfield" discription="" editable="" visible="true" />
+					<!--
+						<att id="ATTR_EQUATION_DEP_VAR" name="Dependent Variable" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR1" name="Independent Variable 1" type="textfield" discription=""
+						editable="" visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR2" name="Independent Variable 2" type="textfield"
+						discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR3" name="Independent Variable 3"
+						type="textfield" discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR4" name="Independent
+						Variable 4" type="textfield" discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR5"
+						name="Independent Variable 5" type="textfield" discription="" editable="" visible="true" /> <att
+						id="ATTR_EQUATION_INDEP_VAR6" name="Independent Variable 6" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR7" name="Independent Variable 7" type="textfield" discription=""
+						editable="" visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR8" name="Independent Variable 8" type="textfield"
+						discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR9" name="Independent Variable 9"
+						type="textfield" discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_INDEP_VAR10"
+						name="Independent Variable 10" type="textfield" discription="" editable="" visible="true" />
+					-->
+
+				</component>
+				<component key="equation.sem">
+					<att id="ATTR_EQUATION_EQUATION1" name="Equation 1" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION2" name="Equation 2" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION3" name="Equation 3" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION4" name="Equation 4" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION5" name="Equation 5" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION6" name="Equation 6" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION7" name="Equation 7" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION8" name="Equation 8" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION9" name="Equation 9" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_EQUATION10" name="Equation 10" type="textfield" discription="" editable="" visible="true" />
+					<!--
+						<att id="ATTR_EQUATION_ENDO_VAR1" name="Endogeneous 1" type="textfield" discription="" editable="" visible="true"
+						/> <att id="ATTR_EQUATION_ENDO_VAR2" name="Endogeneous 2" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_ENDO_VAR3" name="Endogeneous 3" type="textfield" discription=""
+						editable="" visible="true" /> <att id="ATTR_EQUATION_ENDO_VAR4" name="Endogeneous 4" type="textfield"
+						discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_ENDO_VAR5" name="Endogeneous 5"
+						type="textfield" discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_ENDO_VAR6" name="Endogeneous
+						6" type="textfield" discription="" editable="" visible="true" /> <att id="ATTR_EQUATION_ENDO_VAR7"
+						name="Endogeneous 7" type="textfield" discription="" editable="" visible="true" /> <att
+						id="ATTR_EQUATION_ENDO_VAR8" name="Endogeneous 8" type="textfield" discription="" editable="" visible="true" />
+						<att id="ATTR_EQUATION_ENDO_VAR9" name="Endogeneous 9" type="textfield" discription="" editable="" visible="true"
+						/> <att id="ATTR_EQUATION_ENDO_VAR10" name="Endogeneous 10" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR1" name="Exogenous 1" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR2" name="Exogenous 2" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR3" name="Exogenous 3" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR4" name="Exogenous 4" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR5" name="Exogenous 5" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR6" name="Exogenous 6" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR7" name="Exogenous 7" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR8" name="Exogenous 8" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR9" name="Exogenous 9" type="textfield" discription="" editable=""
+						visible="true" /> <att id="ATTR_EQUATION_EXO_VAR10" name="Exogenous 10" type="textfield" discription=""
+						editable="" visible="true" />
+					-->
+
+
+				</component>
+				<component key="equation.surv">
+					<att id="ATTR_EQUATION_DEP_VAR" name="Status Variable" type="selection" discription="" editable="" visible="true"
+						value="1">
+						<option id="ATTR_EQUATION_DEP_VAR_DEAD" value="1" name="Death" />
+						<option id="ATTR_EQUATION_DEP_VAR_SURV" value="2" name="Survival" />
+					</att>
+					<att id="ATTR_EQUATION_FUNC_FAMILY" name="Family" type="selection" discription="" editable="" visible="true"
+						value="1">
+						<option id="ATTR_EQUATION_FUNC_FAMILY_EXPON" value="1" name="Exponential" />
+						<option id="ATTR_EQUATION_FUNC_FAMILY_WEIBULL" value="2" name="Weibull" />
+						<option id="ATTR_EQUATION_FUNC_FAMILY_COX" value="3" name="Cox" />
+					</att>
+					<att id="ATTR_EQUATION_TIME_VAR" name="Time Variable" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_EQUATION_INDEP_VAR1" name="Independent Variable 1" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR2" name="Independent Variable 2" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR3" name="Independent Variable 3" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR4" name="Independent Variable 4" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR5" name="Independent Variable 5" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR6" name="Independent Variable 6" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR7" name="Independent Variable 7" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR8" name="Independent Variable 8" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_ENDO_VAR9" name="Independent Variable 9" type="textfield" discription="" editable=""
+						visible="true" />
+					<att id="ATTR_EQUATION_INDEP_VAR10" name="Independent Variable 10" type="textfield" discription="" editable=""
+						visible="true" />
+				</component>
+			</group>
+		</components>
+		<components key="estimation">
+			<group>
+				<component key="estimation.ols">
+				</component>
+				<component key="estimation.mle">
+				</component>
+				<component key="estimation.gls">
+					<att id="ATTR_ESTIMATION_PARAM1" name="Parameter 1" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM2" name="Parameter 2" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM3" name="Parameter 3" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM4" name="Parameter 4" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM5" name="Parameter 5" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM6" name="Parameter 6" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM7" name="Parameter 7" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM8" name="Parameter 8" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM9" name="Parameter 9" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM10" name="Parameter 10" type="textfield" discription="" editable="" visible="true" />
+				</component>
+				<component key="estimation.nls" init="N">
+					<att id="ATTR_ESTIMATION_START_VALUE" name="Start Value" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_ALGO" name="Algorithm" type="selection" width="180" discription="" editable=""
+						visible="true" value="1">
+						<option id="ATTR_ESTIMATION_ALGO_GN" value="1" name="Gauss-Newton" />
+						<option id="ATTR_ESTIMATION_ALGO_PINEAR_GN" value="2" name="Plinear with Gauss-Newton" />
+						<option id="ATTR_ESTIMATION_ALGO_PORT_GN" value="3" name="Port with Gauss-Newton" />
+					</att>
+
+				</component>
+				<component key="estimation.tsls" init="N">
+					<att id="ATTR_ESTIMATION_PARAM1" name="Parameter 1" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM2" name="Parameter 2" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM3" name="Parameter 3" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM4" name="Parameter 4" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM5" name="Parameter 5" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM6" name="Parameter 6" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM7" name="Parameter 7" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM8" name="Parameter 8" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM9" name="Parameter 9" type="textfield" discription="" editable="" visible="true" />
+					<att id="ATTR_ESTIMATION_PARAM10" name="Parameter 10" type="textfield" discription="" editable="" visible="true" />
+				</component>
+			</group>
+		</components>
+		<components key="evaluation">
+			<group>
+				<component key="evaluation.rsquare">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="Logic Function" editable="" type="textfield" visible="true" value="&gt;0.60"
+						discription="" />
+				</component>
+				<component key="evaluation.pvalue">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="Logic Function" editable="" type="textfield" value="&gt;0.01"
+						visible="true" discription="" />
+				</component>
+
+				<component key="evaluation.cooks">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="Cook's Distance" editable="" type="textfield" visible="true"
+						value="&gt;4/(n-k-1)" discription="" />
+				</component>
+				<component key="evaluation.dffits">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="DFFITS" editable="" type="textfield" visible="true"
+						value="&gt;2 * sqrt ((k+1)/(n-k-1))" discription="" />
+				</component>
+				<component key="evaluation.hat">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="Hat Values" editable="" type="textfield" visible="true" value="&gt;2*(k+1)/n"
+						discription="" />
+				</component>
+				<component key="evaluation.rstudent">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="Studentized Residual" editable="" type="textfield" visible="true"
+						value="(-2, +2)" discription="" />
+				</component>
+				<component key="evaluation.vif">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="Variance Inflation Factor" editable="" type="textfield" visible="true"
+						value="&gt;15" discription="" />
+				</component>
+				<component key="evaluation.normality">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="P-value" editable="" type="textfield" visible="true" value="&gt;0.01"
+						discription="" />
+				</component>
+				<component key="evaluation.ncv">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="P-value" editable="" type="textfield" visible="true" value="&gt;0.01"
+						discription="" />
+				</component>
+				<component key="evaluation.autocorr">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="P-value" editable="" type="textfield" visible="true" value="&gt;0.01"
+						discription="" />
+				</component>
+				<component key="evaluation.linearity">
+				</component>
+				<component key="evaluation.nfi">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="NFI" editable="" type="textfield" visible="true" value="&gt;0.90"
+						discription="" />
+				</component>
+				<component key="evaluation.rmsea">
+					<att id="ATTR_EVALUATION_LOG_FUNCTION" name="RMSEA" editable="" type="textfield" visible="true" value="&lt;0.08"
+						discription="" />
+				</component>
+
+				<!--
+					<component key="evaluation.hat"> <att id="ATTR_EVALUATION_HAT_VALUES" name="Hat Values" editable=""
+					type="textfield" visible="&lt;0.10" value="&gt;2(k+1)" discription="" /> </component> <component
+					key="evaluation.rstudent"> <att id="ATTR_EVALUATION_RSTUDENT" name="Studentized Residual" editable=""
+					type="textfield" visible="&lt;0.10" value="(-2, +2)" discription="" /> </component> <component
+					key="evaluation.vif"> <att id="ATTR_EVALUATION_VIF" name="Variance Inflation Factor" editable="" type="textfield"
+					visible="&lt;0.10" value="&gt;2(k+1)" discription="" /> </component> <component key="evaluation.normality"> <att
+					id="ATTR_EVALUATION_NORMALITY" name="P-value" editable="" type="textfield" visible="&lt;0.10" value="&lt;0.01"
+					discription="" /> </component> <component key="evaluation.ncv"> <att id="ATTR_EVALUATION_NCV" name="P-value"
+					editable="" type="textfield" visible="&lt;0.10" value="&lt;0.01" discription="" /> </component> <component
+					key="evaluation.autocorr"> <att id="ATTR_EVALUATION_AUTOCORR" name="P-value" editable="" type="textfield"
+					visible="&lt;0.10" value="&lt;0.01" discription="" /> </component> <component key="evaluation.linearity">
+					</component> <component key="evaluation.nfi"> <att id="ATTR_EVALUATION_AUTOCORR" name="NFI" editable=""
+					type="textfield" visible="&lt;0.10" value="&lt;0.95" discription="" /> </component> <component
+					key="evaluation.rmsea"> <att id="ATTR_EVALUATION_AUTOCORR" name="RMSEA" editable="" type="textfield"
+					visible="&lt;0.10" value="&lt;0.08" discription="" /> </component>
+				-->
+
+			</group>
+		</components>
+		<components key="explanation">
+			<group>
+				<component key="explanation.std">
+				</component>
+				<component key="explanation.std4sem" init="N">
+				</component>
+				<component key="explanation.com">
+				</component>
+				<component key="explanation.com4sem" init="N">
+				</component>
+				<component key="explanation.cus">
+					<att id="ATTR_ESTIMATION_SIG_STMT" name="1" type="checkbox" value="1" discription="Significance Statement"
+						editable="" visible="false" />
+					<att id="ATTR_ESTIMATION_EXPLAN_PWR" name="2" type="checkbox" discription="Explanation Power Statement"
+						editable="" visible="false" />
+					<att id="ATTR_ESTIMATION_COEFF_TABLE" name="3" type="checkbox" discription="Coefficients Table" editable=""
+						visible="false" />
+					<att id="ATTR_ESTIMATION_PFVR" name="5" type="checkbox" discription="Plot of Fitted Value vs Residuals"
+						editable="" visible="false" />
+					<att id="ATTR_ESTIMATION_VAR_EFFECT" name="4" type="checkbox" discription="Variable Effects Statement"
+						editable="" visible="false" />
+					<att id="ATTR_ESTIMATION_FULL_PLOT" name="6" type="checkbox" discription="Full Plot" editable="" visible="false" />
+				</component>
+
+				<component key="explanation.cus4sem" init="N">
+					<att id="ATTR_ESTIMATION_FIT_EQN" name="7" type="checkbox" discription="Fitted Equations" editable="" visible="false" />
+					<att id="ATTR_ESTIMATION_NFI" name="8" type="checkbox" discription="Normed Fit Index" editable="" visible="false" />
+					<att id="ATTR_ESTIMATION_RMSEA" name="9" type="checkbox" discription="Root-Mean-Square Error" editable=""
+						visible="false" />
+					<att id="ATTR_ESTIMATION_DIAGRAM" name="10" type="checkbox" discription="Diagram" editable="" visible="false" />
+					<att id="ATTR_ESTIMATION_FULL SUMMARY" name="11" type="checkbox" discription="Full Summary" editable=""
+						visible="false" />
+				</component>
+
+			</group>
+		</components>
+	</componentmodel>
+	<componentmodel key="dataModel">
+		<components key="dataModel">
+			<component key="dataModel.importData">
+				<att id="ATTR_DATA_MODEL_TYPE" name="Parameters" editable="" visible="true" type="selection">
+					<option id="ATTR_DATA_MODEL_TYPE_RAWDATA" name="Raw data" />
+					<option id="ATTR_DATA_MODEL_TYPE_COVARIANCE" name="Covariance matrix" />
+					<option id="ATTR_DATA_MODEL_TYPE_CORRELATION" name="Correlation matrix" />
+				</att>
+				<!--
+					<att id="ATTR_DATA_MODEL_LOCATION" name="Data location" editable="" visible="true" type="textfield"
+					value="C:\\data\\GradRate.txt" /> <att id="ATTR_DATA_MODEL_DATA_NAME" name="Data name" editable="" visible="true"
+					type="textfield" value="gradrate" /> <att id="ATTR_DATA_MODEL_SEPERATION" name="Separation" editable=""
+					visible="true" type="textfield" value="\t" />
+				-->
+			</component>
+			<component key="dataModel.selectData">
+				<att id="ATTR_DATA_MODEL_DATA_LOCATION" name="Location" editable="" visible="true" type="textfield" value="" />
+				<att id="ATTR_DATA_MODEL_DATA_NAME" name="Data name" editable="" visible="true" type="textfield" value="" />
+
+			</component>
+		</components>
+
+	</componentmodel>
+</rm>

@@ -1,0 +1,1 @@
+mt.exe -manifest RM4Es_v02.exe.manifest -outputresource:RM4Es_v02.exe;#1

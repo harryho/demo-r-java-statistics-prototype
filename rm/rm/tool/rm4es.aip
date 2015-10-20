@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="6.6" version="6.6" modules="professional" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_MINJREVERSION" MultiBuildValue="DefaultBuild:1.5" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="BannerBitmap" Value="default_banner.bmp" Type="1"/>
+    <ROW Property="DialogBitmap" Value="default_dialog.bmp" Type="1"/>
+    <ROW Property="Manufacturer" Value="RM Institute" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{4FABDECD-F9C7-4DEC-808F-215D9DFAB7D1} 2057:{BDF78EDA-CC77-4161-B398-386BA6B74A64} "/>
+    <ROW Property="ProductLanguage" Value="2057"/>
+    <ROW Property="ProductName" Value="RM4Es version 0.2" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="0.2"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:Force"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{E4CCCB37-EEC1-4085-BF1F-19859AB2AEF7}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Company_Flows_DIR" Directory_Parent="rmflow_DIR" DefaultDir="Compan~1|Company Flows"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="My_Flows_DIR" Directory_Parent="rmflow_DIR" DefaultDir="MyFlow~1|My Flows"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="cache_DIR" Directory_Parent="APPDIR" DefaultDir="cache"/>
+    <ROW Directory="com_DIR" Directory_Parent="APPDIR" DefaultDir="com"/>
+    <ROW Directory="config_DIR" Directory_Parent="rm_DIR" DefaultDir="config"/>
+    <ROW Directory="doc_DIR" Directory_Parent="APPDIR" DefaultDir="doc"/>
+    <ROW Directory="images_DIR" Directory_Parent="rm_DIR" DefaultDir="images"/>
+    <ROW Directory="lib_DIR" Directory_Parent="APPDIR" DefaultDir="lib"/>
+    <ROW Directory="logs_DIR" Directory_Parent="APPDIR" DefaultDir="logs"/>
+    <ROW Directory="rm_DIR" Directory_Parent="com_DIR" DefaultDir="rm"/>
+    <ROW Directory="rmflow_DIR" Directory_Parent="APPDIR" DefaultDir="rmflow"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Company_Flows" ComponentId="{8BAF6DE8-6C17-42B1-AAAE-361D4E89ECF5}" Directory_="Company_Flows_DIR" Attributes="0"/>
+    <ROW Component="RM4Es_v02.exe" ComponentId="{758561DC-F107-48F4-85E8-91A3DA618AA8}" Directory_="APPDIR" Attributes="0" KeyPath="RM4Es_v02.exe"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{B99AC4BB-B7AB-4451-BC11-E08D1F20659B}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="actions.properties" ComponentId="{48D0E6BB-89C7-4B1A-996B-D6652E606E5A}" Directory_="config_DIR" Attributes="0" KeyPath="actions.properties" Type="0"/>
+    <ROW Component="alumni.rm4es" ComponentId="{17AFCAD8-31A3-4753-98D2-2E067CA87879}" Directory_="My_Flows_DIR" Attributes="0" KeyPath="alumni.rm4es" Type="0"/>
+    <ROW Component="analysis.jpg" ComponentId="{8A02C1F3-D299-4ADA-8FD2-7EBE9EFEE608}" Directory_="images_DIR" Attributes="0" KeyPath="analysis.jpg" Type="0"/>
+    <ROW Component="app.ico" ComponentId="{6E3B3F78-791F-4C28-BF19-78C8F8A15AF6}" Directory_="APPDIR" Attributes="0" KeyPath="app.ico" Type="0"/>
+    <ROW Component="cache" ComponentId="{090D3500-A210-428C-B8BB-127B77B84EA2}" Directory_="cache_DIR" Attributes="0"/>
+    <ROW Component="graph.xml.2009_04_26" ComponentId="{D57D224E-B829-4EE9-9320-C9BDF8FA8DED}" Directory_="logs_DIR" Attributes="0" KeyPath="rm4es.log" Type="0"/>
+    <ROW Component="help.chm" ComponentId="{1A1CBFEB-0798-47B2-ADBA-B14FA60C5AD1}" Directory_="doc_DIR" Attributes="0" KeyPath="help.chm" Type="1"/>
+    <ROW Component="jRegistryKey.dll" ComponentId="{3C2C459D-D5BF-4927-9AA0-EC91725E842B}" Directory_="APPDIR" Attributes="0" KeyPath="jRegistryKey.dll"/>
+    <ROW Component="jgraph.jar" ComponentId="{7722F5A7-45F7-4156-BB5C-75B3C25B9B77}" Directory_="lib_DIR" Attributes="0" KeyPath="jgraph.jar" Type="0"/>
+    <ROW Component="r_reg.exe" ComponentId="{9F8286C0-A4A2-4021-B678-6FDF12030F89}" Directory_="APPDIR" Attributes="0" KeyPath="r_reg.exe"/>
+    <ROW Component="rm4es.dll" ComponentId="{0AA98626-00C9-4499-9515-019A57B8227F}" Directory_="APPDIR" Attributes="0" KeyPath="rm4es.dll"/>
+    <ROW Component="setx.exe" ComponentId="{CD866772-81C2-4018-8F72-BBA1D068D871}" Directory_="APPDIR" Attributes="0" KeyPath="setx.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="app.ico actions.properties analysis.jpg help.chm jRegistryKey.dll jgraph.jar graph.xml.2009_04_26 rm4es.dll RM4Es_v02.exe alumni.rm4es r_reg.exe setx.exe SHORTCUTDIR cache Company_Flows"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Audit.rm4es" Component_="alumni.rm4es" FileName="Audit~1.rm4|Audit.rm4es" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\Audit.rm4es" SelfReg="false" Sequence="119"/>
+    <ROW File="Audit.txt" Component_="alumni.rm4es" FileName="Audit.txt" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\Audit.txt" SelfReg="false" Sequence="120"/>
+    <ROW File="Enquirer.rm4es" Component_="alumni.rm4es" FileName="Enquir~1.rm4|Enquirer.rm4es" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\Enquirer.rm4es" SelfReg="false" Sequence="121"/>
+    <ROW File="Enquirer.txt" Component_="alumni.rm4es" FileName="Enquirer.txt" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\Enquirer.txt" SelfReg="false" Sequence="122"/>
+    <ROW File="F.LOCK" Component_="app.ico" FileName="_F~1.LOC|_F.LOCK" Attributes="0" SourcePath="D:\workspace\RM\build\_F.LOCK" SelfReg="false" Sequence="131"/>
+    <ROW File="GradRate.rm4es" Component_="alumni.rm4es" FileName="GradRa~1.rm4|GradRate.rm4es" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\GradRate.rm4es" SelfReg="false" Sequence="123"/>
+    <ROW File="GradRate.txt" Component_="alumni.rm4es" FileName="GradRate.txt" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\GradRate.txt" SelfReg="false" Sequence="124"/>
+    <ROW File="GradRate1.txt" Component_="alumni.rm4es" FileName="GradRa~1.txt|GradRate1.txt" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\GradRate1.txt" SelfReg="false" Sequence="125"/>
+    <ROW File="PGATour.txt" Component_="alumni.rm4es" FileName="PGATour.txt" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\PGATour.txt" SelfReg="false" Sequence="126"/>
+    <ROW File="RM4Es.jar" Component_="app.ico" FileName="RM4Es.jar" Attributes="0" SourcePath="D:\workspace\RM\build\RM4Es.jar" SelfReg="false" Sequence="115"/>
+    <ROW File="RM4Es_plugin_1.0.jar" Component_="jgraph.jar" FileName="RM4Es-~1.jar|RM4Es-plugin-1.0.jar" Attributes="0" SourcePath="D:\workspace\RM\build\lib\RM4Es-plugin-1.0.jar" SelfReg="false" Sequence="110"/>
+    <ROW File="RM4Es_v02.exe" Component_="RM4Es_v02.exe" FileName="RM4Es_~1.exe|RM4Es_v02.exe" Attributes="0" SourcePath="D:\workspace\RM\build\RM4Es_v02.exe" SelfReg="false" Sequence="116"/>
+    <ROW File="Thumbs.db" Component_="analysis.jpg" FileName="Thumbs.db" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\Thumbs.db" SelfReg="false" Sequence="89"/>
+    <ROW File="X4capital.rm4es" Component_="alumni.rm4es" FileName="X4capi~1.rm4|X4capital.rm4es" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\X4capital.rm4es" SelfReg="false" Sequence="127"/>
+    <ROW File="X4capital.txt" Component_="alumni.rm4es" FileName="X4capi~1.txt|X4capital.txt" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\X4capital.txt" SelfReg="false" Sequence="128"/>
+    <ROW File="actions.properties" Component_="actions.properties" FileName="action~1.pro|actions.properties" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\config\actions.properties" SelfReg="false" Sequence="2"/>
+    <ROW File="alumni.rm4es" Component_="alumni.rm4es" FileName="alumni~1.rm4|alumni.rm4es" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\alumni.rm4es" SelfReg="false" Sequence="117"/>
+    <ROW File="alumni1.txt" Component_="alumni.rm4es" FileName="alumni1.txt" Attributes="0" SourcePath="D:\workspace\RM\build\rmflow\My Flows\alumni1.txt" SelfReg="false" Sequence="118"/>
+    <ROW File="analysis.jpg" Component_="analysis.jpg" FileName="analysis.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\analysis.jpg" SelfReg="false" Sequence="9"/>
+    <ROW File="antialias.gif" Component_="analysis.jpg" FileName="antial~1.gif|antialias.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\antialias.gif" SelfReg="false" Sequence="10"/>
+    <ROW File="app.ico" Component_="app.ico" FileName="app.ico" Attributes="0" SourcePath="D:\workspace\RM\build\app.ico" SelfReg="false" Sequence="1"/>
+    <ROW File="bold.gif" Component_="analysis.jpg" FileName="bold.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\bold.gif" SelfReg="false" Sequence="11"/>
+    <ROW File="bottom.gif" Component_="analysis.jpg" FileName="bottom.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\bottom.gif" SelfReg="false" Sequence="12"/>
+    <ROW File="center.gif" Component_="analysis.jpg" FileName="center.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\center.gif" SelfReg="false" Sequence="13"/>
+    <ROW File="circle.gif" Component_="analysis.jpg" FileName="circle.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\circle.gif" SelfReg="false" Sequence="14"/>
+    <ROW File="closefolder.gif" Component_="analysis.jpg" FileName="closef~1.gif|closefolder.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\closefolder.gif" SelfReg="false" Sequence="15"/>
+    <ROW File="collaboration.png" Component_="analysis.jpg" FileName="collab~1.png|collaboration.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\collaboration.png" SelfReg="false" Sequence="16"/>
+    <ROW File="collapse.gif" Component_="analysis.jpg" FileName="collapse.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\collapse.gif" SelfReg="false" Sequence="17"/>
+    <ROW File="color.gif" Component_="analysis.jpg" FileName="color.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\color.gif" SelfReg="false" Sequence="18"/>
+    <ROW File="component.jpg" Component_="analysis.jpg" FileName="compon~1.jpg|component.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\component.jpg" SelfReg="false" Sequence="19"/>
+    <ROW File="connect.gif" Component_="analysis.jpg" FileName="connect.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\connect.gif" SelfReg="false" Sequence="20"/>
+    <ROW File="copy.gif" Component_="analysis.jpg" FileName="copy.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\copy.gif" SelfReg="false" Sequence="21"/>
+    <ROW File="cut.gif" Component_="analysis.jpg" FileName="cut.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\cut.gif" SelfReg="false" Sequence="22"/>
+    <ROW File="cylinder.gif" Component_="analysis.jpg" FileName="cylinder.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\cylinder.gif" SelfReg="false" Sequence="23"/>
+    <ROW File="data.jpg" Component_="analysis.jpg" FileName="data.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\data.jpg" SelfReg="false" Sequence="24"/>
+    <ROW File="datamodel.jpg" Component_="analysis.jpg" FileName="datamo~1.jpg|datamodel.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\datamodel.jpg" SelfReg="false" Sequence="25"/>
+    <ROW File="default.theme" Component_="app.ico" FileName="defaul~1.the|default.theme" Attributes="0" SourcePath="D:\workspace\RM\build\default.theme" SelfReg="false" Sequence="103"/>
+    <ROW File="delete.gif" Component_="analysis.jpg" FileName="delete.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\delete.gif" SelfReg="false" Sequence="26"/>
+    <ROW File="diamond.gif" Component_="analysis.jpg" FileName="diamond.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\diamond.gif" SelfReg="false" Sequence="27"/>
+    <ROW File="disconnect.gif" Component_="analysis.jpg" FileName="discon~1.gif|disconnect.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\disconnect.gif" SelfReg="false" Sequence="28"/>
+    <ROW File="displays.png" Component_="analysis.jpg" FileName="displays.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\displays.png" SelfReg="false" Sequence="29"/>
+    <ROW File="edge.gif" Component_="analysis.jpg" FileName="edge.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\edge.gif" SelfReg="false" Sequence="30"/>
+    <ROW File="edit.gif" Component_="analysis.jpg" FileName="edit.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\edit.gif" SelfReg="false" Sequence="31"/>
+    <ROW File="equation.jpg" Component_="analysis.jpg" FileName="equation.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\equation.jpg" SelfReg="false" Sequence="32"/>
+    <ROW File="error.log_1" Component_="graph.xml.2009_04_26" FileName="error.log" Attributes="0" SourcePath="D:\workspace\RM\build\logs\error.log" SelfReg="false" Sequence="132"/>
+    <ROW File="estimation.jpg" Component_="analysis.jpg" FileName="estima~1.jpg|estimation.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\estimation.jpg" SelfReg="false" Sequence="33"/>
+    <ROW File="evaluation.jpg" Component_="analysis.jpg" FileName="evalua~1.jpg|evaluation.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\evaluation.jpg" SelfReg="false" Sequence="34"/>
+    <ROW File="expand.gif" Component_="analysis.jpg" FileName="expand.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\expand.gif" SelfReg="false" Sequence="35"/>
+    <ROW File="expandall.gif" Component_="analysis.jpg" FileName="expand~1.gif|expandall.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\expandall.gif" SelfReg="false" Sequence="36"/>
+    <ROW File="explanation.jpg" Component_="analysis.jpg" FileName="explan~1.jpg|explanation.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\explanation.jpg" SelfReg="false" Sequence="37"/>
+    <ROW File="find.gif" Component_="analysis.jpg" FileName="find.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\find.gif" SelfReg="false" Sequence="38"/>
+    <ROW File="findagain.gif" Component_="analysis.jpg" FileName="findag~1.gif|findagain.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\findagain.gif" SelfReg="false" Sequence="39"/>
+    <ROW File="flowfile.gif" Component_="analysis.jpg" FileName="flowfile.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\flowfile.gif" SelfReg="false" Sequence="40"/>
+    <ROW File="font.gif" Component_="analysis.jpg" FileName="font.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\font.gif" SelfReg="false" Sequence="41"/>
+    <ROW File="grid.gif" Component_="analysis.jpg" FileName="grid.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\grid.gif" SelfReg="false" Sequence="42"/>
+    <ROW File="group.gif" Component_="analysis.jpg" FileName="group.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\group.gif" SelfReg="false" Sequence="43"/>
+    <ROW File="help.chm" Component_="help.chm" FileName="help.chm" Attributes="0" SourcePath="D:\workspace\RM\build\doc\help.chm" SelfReg="false" Sequence="104"/>
+    <ROW File="help.png" Component_="analysis.jpg" FileName="help.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\help.png" SelfReg="false" Sequence="44"/>
+    <ROW File="hide.gif" Component_="analysis.jpg" FileName="hide.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\hide.gif" SelfReg="false" Sequence="45"/>
+    <ROW File="image.gif" Component_="analysis.jpg" FileName="image.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\image.gif" SelfReg="false" Sequence="46"/>
+    <ROW File="italic.gif" Component_="analysis.jpg" FileName="italic.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\italic.gif" SelfReg="false" Sequence="47"/>
+    <ROW File="jRegistryKey.dll" Component_="jRegistryKey.dll" FileName="jRegis~1.dll|jRegistryKey.dll" Attributes="0" SourcePath="D:\workspace\RM\build\jRegistryKey.dll" SelfReg="false" Sequence="105"/>
+    <ROW File="jRegistryKey.jar" Component_="jgraph.jar" FileName="jRegis~1.jar|jRegistryKey.jar" Attributes="0" SourcePath="D:\workspace\RM\build\lib\jRegistryKey.jar" SelfReg="false" Sequence="107"/>
+    <ROW File="jgraph.jar" Component_="jgraph.jar" FileName="jgraph.jar" Attributes="0" SourcePath="D:\workspace\RM\build\lib\jgraph.jar" SelfReg="false" Sequence="106"/>
+    <ROW File="l2fprod_common_all.jar" Component_="jgraph.jar" FileName="l2fpro~1.jar|l2fprod-common-all.jar" Attributes="0" SourcePath="D:\workspace\RM\build\lib\l2fprod-common-all.jar" SelfReg="false" Sequence="108"/>
+    <ROW File="left.gif" Component_="analysis.jpg" FileName="left.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\left.gif" SelfReg="false" Sequence="48"/>
+    <ROW File="log4j.properties" Component_="app.ico" FileName="log4j~1.pro|log4j.properties" Attributes="0" SourcePath="D:\workspace\RM\build\log4j.properties" SelfReg="false" Sequence="112"/>
+    <ROW File="log4j_1.2.8.jar" Component_="jgraph.jar" FileName="log4j-~1.jar|log4j-1.2.8.jar" Attributes="0" SourcePath="D:\workspace\RM\build\lib\log4j-1.2.8.jar" SelfReg="false" Sequence="109"/>
+    <ROW File="logo.gif" Component_="analysis.jpg" FileName="logo.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\logo.gif" SelfReg="false" Sequence="49"/>
+    <ROW File="logo32.gif" Component_="analysis.jpg" FileName="logo32.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\logo32.gif" SelfReg="false" Sequence="50"/>
+    <ROW File="menus.properties" Component_="actions.properties" FileName="menus~1.pro|menus.properties" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\config\menus.properties" SelfReg="false" Sequence="3"/>
+    <ROW File="middle.gif" Component_="analysis.jpg" FileName="middle.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\middle.gif" SelfReg="false" Sequence="51"/>
+    <ROW File="newdiagram.gif" Component_="analysis.jpg" FileName="newdia~1.gif|newdiagram.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\newdiagram.gif" SelfReg="false" Sequence="52"/>
+    <ROW File="newdocument.gif" Component_="analysis.jpg" FileName="newdoc~1.gif|newdocument.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\newdocument.gif" SelfReg="false" Sequence="53"/>
+    <ROW File="newlibrary.gif" Component_="analysis.jpg" FileName="newlib~1.gif|newlibrary.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\newlibrary.gif" SelfReg="false" Sequence="54"/>
+    <ROW File="nodeclose.jpg" Component_="analysis.jpg" FileName="nodecl~1.jpg|nodeclose.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\nodeclose.jpg" SelfReg="false" Sequence="55"/>
+    <ROW File="nodeopen.jpg" Component_="analysis.jpg" FileName="nodeopen.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\nodeopen.jpg" SelfReg="false" Sequence="56"/>
+    <ROW File="noimage.gif" Component_="analysis.jpg" FileName="noimage.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\noimage.gif" SelfReg="false" Sequence="57"/>
+    <ROW File="open.gif" Component_="analysis.jpg" FileName="open.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\open.gif" SelfReg="false" Sequence="58"/>
+    <ROW File="openfile.png" Component_="analysis.jpg" FileName="openfile.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\openfile.png" SelfReg="false" Sequence="59"/>
+    <ROW File="openfolder.gif" Component_="analysis.jpg" FileName="openfo~1.gif|openfolder.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\openfolder.gif" SelfReg="false" Sequence="60"/>
+    <ROW File="orthogonal.gif" Component_="analysis.jpg" FileName="orthog~1.gif|orthogonal.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\orthogonal.gif" SelfReg="false" Sequence="61"/>
+    <ROW File="paste.gif" Component_="analysis.jpg" FileName="paste.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\paste.gif" SelfReg="false" Sequence="62"/>
+    <ROW File="plain.gif" Component_="analysis.jpg" FileName="plain.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\plain.gif" SelfReg="false" Sequence="63"/>
+    <ROW File="ports.gif" Component_="analysis.jpg" FileName="ports.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\ports.gif" SelfReg="false" Sequence="64"/>
+    <ROW File="print.gif" Component_="analysis.jpg" FileName="print.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\print.gif" SelfReg="false" Sequence="65"/>
+    <ROW File="r_reg.exe" Component_="r_reg.exe" FileName="r_reg.exe" Attributes="0" SourcePath="D:\workspace\RM\build\r_reg.exe" SelfReg="false" Sequence="129"/>
+    <ROW File="rectangle.gif" Component_="analysis.jpg" FileName="rectan~1.gif|rectangle.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rectangle.gif" SelfReg="false" Sequence="66"/>
+    <ROW File="redo.gif" Component_="analysis.jpg" FileName="redo.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\redo.gif" SelfReg="false" Sequence="67"/>
+    <ROW File="researchflows.jpg" Component_="analysis.jpg" FileName="resear~1.jpg|researchflows.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\researchflows.jpg" SelfReg="false" Sequence="68"/>
+    <ROW File="researchmaps.jpg" Component_="analysis.jpg" FileName="resear~2.jpg|researchmaps.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\researchmaps.jpg" SelfReg="false" Sequence="69"/>
+    <ROW File="right.gif" Component_="analysis.jpg" FileName="right.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\right.gif" SelfReg="false" Sequence="70"/>
+    <ROW File="rm.gif" Component_="analysis.jpg" FileName="rm.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rm.gif" SelfReg="false" Sequence="71"/>
+    <ROW File="rm.jpg" Component_="analysis.jpg" FileName="rm.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rm.jpg" SelfReg="false" Sequence="72"/>
+    <ROW File="rm.xml" Component_="actions.properties" FileName="rm.xml" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\config\rm.xml" SelfReg="false" Sequence="4"/>
+    <ROW File="rm4es.dll" Component_="rm4es.dll" FileName="rm4es.dll" Attributes="0" SourcePath="D:\workspace\RM\build\rm4es.dll" SelfReg="false" Sequence="114"/>
+    <ROW File="rm4es.log" Component_="graph.xml.2009_04_26" FileName="rm4es.log" Attributes="0" SourcePath="D:\workspace\RM\build\logs\rm4es.log" SelfReg="false" Sequence="113"/>
+    <ROW File="rmaps.png" Component_="analysis.jpg" FileName="rmaps.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rmaps.png" SelfReg="false" Sequence="73"/>
+    <ROW File="rmcomponent.properties" Component_="actions.properties" FileName="rmcomp~1.pro|rmcomponent.properties" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\config\rmcomponent.properties" SelfReg="false" Sequence="5"/>
+    <ROW File="rmcomponents.jpg" Component_="analysis.jpg" FileName="rmcomp~1.jpg|rmcomponents.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rmcomponents.jpg" SelfReg="false" Sequence="74"/>
+    <ROW File="rmlogo.jpg" Component_="analysis.jpg" FileName="rmlogo.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rmlogo.jpg" SelfReg="false" Sequence="75"/>
+    <ROW File="rmsys.jpg" Component_="analysis.jpg" FileName="rmsys.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rmsys.jpg" SelfReg="false" Sequence="76"/>
+    <ROW File="rounded.gif" Component_="analysis.jpg" FileName="rounded.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\rounded.gif" SelfReg="false" Sequence="77"/>
+    <ROW File="ruler.gif" Component_="analysis.jpg" FileName="ruler.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\ruler.gif" SelfReg="false" Sequence="78"/>
+    <ROW File="run.png" Component_="analysis.jpg" FileName="run.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\run.png" SelfReg="false" Sequence="79"/>
+    <ROW File="save.gif" Component_="analysis.jpg" FileName="save.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\save.gif" SelfReg="false" Sequence="80"/>
+    <ROW File="saveall.gif" Component_="analysis.jpg" FileName="saveall.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\saveall.gif" SelfReg="false" Sequence="81"/>
+    <ROW File="search.gif" Component_="analysis.jpg" FileName="search.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\search.gif" SelfReg="false" Sequence="82"/>
+    <ROW File="search.jpg" Component_="analysis.jpg" FileName="search.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\search.jpg" SelfReg="false" Sequence="83"/>
+    <ROW File="search.png" Component_="analysis.jpg" FileName="search.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\search.png" SelfReg="false" Sequence="84"/>
+    <ROW File="select.gif" Component_="analysis.jpg" FileName="select.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\select.gif" SelfReg="false" Sequence="85"/>
+    <ROW File="setx.exe" Component_="setx.exe" FileName="setx.exe" Attributes="0" SourcePath="D:\workspace\RM\build\setx.exe" SelfReg="false" Sequence="130"/>
+    <ROW File="startup_logo.jpg" Component_="analysis.jpg" FileName="startu~1.jpg|startup_logo.jpg" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\startup_logo.jpg" SelfReg="false" Sequence="86"/>
+    <ROW File="strings.properties" Component_="actions.properties" FileName="string~1.pro|strings.properties" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\config\strings.properties" SelfReg="false" Sequence="6"/>
+    <ROW File="terminal.png" Component_="analysis.jpg" FileName="terminal.png" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\terminal.png" SelfReg="false" Sequence="87"/>
+    <ROW File="text.gif" Component_="analysis.jpg" FileName="text.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\text.gif" SelfReg="false" Sequence="88"/>
+    <ROW File="tinylaf.jar" Component_="jgraph.jar" FileName="tinylaf.jar" Attributes="0" SourcePath="D:\workspace\RM\build\lib\tinylaf.jar" SelfReg="false" Sequence="111"/>
+    <ROW File="toback.gif" Component_="analysis.jpg" FileName="toback.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\toback.gif" SelfReg="false" Sequence="90"/>
+    <ROW File="tofront.gif" Component_="analysis.jpg" FileName="tofront.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\tofront.gif" SelfReg="false" Sequence="91"/>
+    <ROW File="tools.properties" Component_="actions.properties" FileName="tools~1.pro|tools.properties" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\config\tools.properties" SelfReg="false" Sequence="7"/>
+    <ROW File="top.gif" Component_="analysis.jpg" FileName="top.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\top.gif" SelfReg="false" Sequence="92"/>
+    <ROW File="tree.gif" Component_="analysis.jpg" FileName="tree.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\tree.gif" SelfReg="false" Sequence="93"/>
+    <ROW File="triangle.gif" Component_="analysis.jpg" FileName="triangle.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\triangle.gif" SelfReg="false" Sequence="94"/>
+    <ROW File="ui.xml" Component_="actions.properties" FileName="ui.xml" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\config\ui.xml" SelfReg="false" Sequence="8"/>
+    <ROW File="underline.gif" Component_="analysis.jpg" FileName="underl~1.gif|underline.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\underline.gif" SelfReg="false" Sequence="95"/>
+    <ROW File="undo.gif" Component_="analysis.jpg" FileName="undo.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\undo.gif" SelfReg="false" Sequence="96"/>
+    <ROW File="ungroup.gif" Component_="analysis.jpg" FileName="ungroup.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\ungroup.gif" SelfReg="false" Sequence="97"/>
+    <ROW File="web.gif" Component_="analysis.jpg" FileName="web.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\web.gif" SelfReg="false" Sequence="98"/>
+    <ROW File="zoom.gif" Component_="analysis.jpg" FileName="zoom.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\zoom.gif" SelfReg="false" Sequence="99"/>
+    <ROW File="zoomactual.gif" Component_="analysis.jpg" FileName="zoomac~1.gif|zoomactual.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\zoomactual.gif" SelfReg="false" Sequence="100"/>
+    <ROW File="zoomin.gif" Component_="analysis.jpg" FileName="zoomin.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\zoomin.gif" SelfReg="false" Sequence="101"/>
+    <ROW File="zoomout.gif" Component_="analysis.jpg" FileName="zoomout.gif" Attributes="0" SourcePath="D:\workspace\RM\build\com\rm\images\zoomout.gif" SelfReg="false" Sequence="102"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en;en_GB" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en_GB.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_FRAGS&gt;FolderDlg.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_FRAGS&gt;UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="default_banner.bmp" SourcePath="&lt;AI_RES&gt;default-banner.bmp"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;AI_RES&gt;default-dialog.bmp"/>
+    <ROW Name="setx.exe" SourcePath="D:\workspace\RM\build\setx.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+    <ROW Directory_="cache_DIR" Component_="cache"/>
+    <ROW Directory_="Company_Flows_DIR" Component_="Company_Flows"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectJRE" Type="1" Source="aicustact.dll" Target="RequiredJreExists"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder][Manufacturer]\RM4Es"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="setx.exe" Type="1090" Source="setx.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="controlPanelIcon.exe" SourcePath="D:\workspace\RM\build\app.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1545"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1300"/>
+    <ROW Action="AI_DetectJRE" Condition="1" Sequence="398" Builds="DefaultBuild"/>
+    <ROW Action="setx.exe" Condition="NOT Installed" Sequence="5935"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_DetectJRE" Condition="1" Sequence="398" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="AI_JREVERFOUND = 1" Description="[ProductName] cannot be installed on systems with JRE version smaller than [AI_MINJREVERSION]" DescriptionLocId="AI.LaunchCondition.Jre" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="Privileged" Description="[ProductName] requires administrative privileges to install." DescriptionLocId="AI.LaunchCondition.Privileged" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRemoveFileComponent">
+    <ROW FileKey="_" Component_="SHORTCUTDIR" DirProperty="APPDIR" InstallMode="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="RM4Es_v02.exe" Directory_="SHORTCUTDIR" Name="RM4Es_~1.exe|RM4Es_v02.exe" Component_="RM4Es_v02.exe" Target="[#RM4Es_v02.exe]" Description="RM4Es_v02.exe" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR" Advertised="true"/>
+    <ROW Shortcut="RM4Es_v02.exe_1" Directory_="DesktopFolder" Name="RM4Es_~1|RM4Es_v02" Component_="RM4Es_v02.exe" Target="[#RM4Es_v02.exe]" Description="RM4Es_v02" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="D:\workspace\RM\build" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+  </COMPONENT>
+</DOCUMENT>

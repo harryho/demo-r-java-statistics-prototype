@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_12" class="java.beans.XMLDecoder"> 
+ <object class="org.jgraph.graph.GraphLayoutCache"> 
+  <object class="com.rm.app.graph.RMModel"/> 
+  <object class="org.jgraph.graph.DefaultCellViewFactory"/> 
+  <boolean>true</boolean> 
+  <void property="localAttributes"> 
+   <void method="add"> 
+    <string>bounds</string> 
+   </void> 
+  </void> 
+  <void id="HashSet0" property="visibleSet"> 
+   <void method="add"> 
+    <object id="DefaultPort0" class="org.jgraph.graph.DefaultPort"> 
+     <void id="HashSet1" property="edges"> 
+      <void method="add"> 
+       <object id="RMGraphEdge0" class="com.rm.app.graph.RMGraphEdge"> 
+        <void property="attributes"> 
+         <void method="put"> 
+          <string>linewidth</string> 
+          <float>1.0</float> 
+         </void> 
+         <void method="put"> 
+          <string>labelAlongEdge</string> 
+          <boolean>false</boolean> 
+         </void> 
+         <void method="put"> 
+          <string>lineEnd</string> 
+          <int>2</int> 
+         </void> 
+         <void method="put"> 
+          <string>lineBegin</string> 
+          <int>10</int> 
+         </void> 
+         <void method="put"> 
+          <string>lineStyle</string> 
+          <int>11</int> 
+         </void> 
+         <void method="put"> 
+          <string>editable</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="put"> 
+          <string>routing</string> 
+          <object class="org.jgraph.graph.DefaultEdge$DefaultRouting"/> 
+         </void> 
+        </void> 
+        <void property="source"> 
+         <object id="DefaultPort1" class="org.jgraph.graph.DefaultPort"> 
+          <void id="HashSet2" property="edges"> 
+           <void method="add"> 
+            <object idref="RMGraphEdge0"/> 
+           </void> 
+          </void> 
+          <void property="edges"> 
+           <object idref="HashSet2"/> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="sourceId"> 
+         <string>SR_1239292190187</string> 
+        </void> 
+        <void property="sourceType"> 
+         <string>equation</string> 
+        </void> 
+        <void property="target"> 
+         <object idref="DefaultPort0"/> 
+        </void> 
+        <void property="targetId"> 
+         <string>OLS_1239292192046</string> 
+        </void> 
+        <void property="targetType"> 
+         <string>estimation</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+     <void property="edges"> 
+      <object idref="HashSet1"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>OLSE</string> 
+     <void method="add"> 
+      <object idref="DefaultPort0"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object class="javax.swing.ImageIcon"> 
+        <string>file:/F:/ws/rm/rm/bin/com/rm/images/estimation.jpg</string> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object id="Color0" class="java.awt.Color"> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>estimation</string> 
+     </void> 
+     <void property="id"> 
+      <string>OLS_1239292192046</string> 
+     </void> 
+     <void property="key"> 
+      <string>estimation.ols</string> 
+     </void> 
+     <void property="name"> 
+      <string>OLS</string> 
+     </void> 
+     <void property="posX"> 
+      <double>228.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>142.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>OLSE</string> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object idref="RMGraphEdge0"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort1"/> 
+   </void> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>SR</string> 
+     <void method="add"> 
+      <object idref="DefaultPort1"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object class="javax.swing.ImageIcon"> 
+        <string>file:/F:/ws/rm/rm/bin/com/rm/images/equation.jpg</string> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>equation</string> 
+     </void> 
+     <void property="dataMap"> 
+      <void method="put"> 
+       <string>Independent Variable</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="discription"> 
+         <string></string> 
+        </void> 
+        <void property="name"> 
+         <string>Independent Variable</string> 
+        </void> 
+        <void property="type"> 
+         <string>textfield</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>Dependent Variable</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="discription"> 
+         <string></string> 
+        </void> 
+        <void property="name"> 
+         <string>Dependent Variable</string> 
+        </void> 
+        <void property="type"> 
+         <string>textfield</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+     <void property="id"> 
+      <string>SR_1239292190187</string> 
+     </void> 
+     <void property="key"> 
+      <string>equation.sr</string> 
+     </void> 
+     <void property="name"> 
+      <string>SR</string> 
+     </void> 
+     <void property="posX"> 
+      <double>96.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>112.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>SR</string> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+  <void property="visibleSet"> 
+   <object idref="HashSet0"/> 
+  </void> 
+ </object> 
+</java> 

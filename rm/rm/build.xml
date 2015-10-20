@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="RM4Es" basedir="." default="build_delivery">
+
+	<property name="project.name" value="RM4Es" />
+	<property name="project.version" value="1.0" />
+	<property name="src.dir" value="src" />
+	<property name="plugin.src.dir" value="${basedir}/plugin" />
+	<property name="build.target.dir" value="${basedir}/build" />
+	<property name="lib.dir" value="${basedir}/lib" />
+	<property name="data.dir" value="${basedir}/rmflow" />
+	<property name="doc.dir" value="${basedir}/doc" />
+	<property name="class.dir" value="${basedir}/bin" />
+	<property name="reg.jar.name" value="r_reg" />
+	<property name="renamelog" value="${basedir}/build/renamelog.xml" />
+	<property name="mainclass" value="com.rm.app.RMApp" />
+
+
+	<path id="project.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="jar_plugin">
+		<jar destfile="${lib.dir}/${project.name}-plugin-${project.version}.jar">
+			<fileset dir="${class.dir}">
+				<include name="org/**" />
+			</fileset>
+		</jar>
+	</target>
+
+
+	<target name="jar_main">
+		<jar destfile="${lib.dir}/${project.name}.jar">
+			<manifest>
+				<attribute name="Class-Path" value="lib/jgraph.jar lib/looks-1.3.1.jar lib/jRegistryKey.jar  lib/log4j-1.2.8.jar lib/looks-1.3.1.jar lib/l2fprod-common-all.jar lib/${project.name}-plugin-${project.version}.jar" />
+				<attribute name="Main-Class" value="com.rm.app.reg.RegMain" />
+			</manifest>
+			<fileset dir="${class.dir}">
+				<include name="com/**" />
+			</fileset>
+		</jar>
+	</target>
+
+	<target name="jar_all" depends="compile">
+		<antcall target="jar_plugin" />
+		<antcall target="jar_main" />
+	</target>
+
+	<target name="compile">
+		<delete includeemptydirs="true" dir="${class.dir}/com" />
+		<delete includeemptydirs="true" dir="${class.dir}/org" />
+		<javac srcdir="" source="1.5" destdir="${class.dir}" encoding="UTF-8">
+			<src path="${src.dir}" />
+			<src path="${plugin.src.dir}" />
+			<classpath refid="project.classpath" />
+		</javac>
+	</target>
+
+	<!--
+		- - - - - - - - - - - - - - - - - target: clean_build - - - - - - - -
+		- - - - - - - - -
+	-->
+	<target name="clean_build">
+		<delete includeemptydirs="true">
+			<fileset dir="${build.target.dir}">
+				<include name="**/*" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="prepare_build" depends="clean_build">
+		<echo> Prepare necessary files for building beginning ...</echo>
+
+		<!--
+		<mkdir dir="${build.target.dir}/data/company" />
+		<mkdir dir="${build.target.dir}/data/my" />
+		-->
+		<mkdir dir="${build.target.dir}/rmflow/Company Flows" />
+		<mkdir dir="${build.target.dir}/rmflow/My Flows" />
+		<mkdir dir="${build.target.dir}/doc" />
+		<mkdir dir="${build.target.dir}/logs" />
+		<copydir dest="${build.target.dir}/lib" src="${lib.dir}" />
+		<copydir dest="${build.target.dir}/rmflow" src="${data.dir}" />
+		<copy todir="${build.target.dir}">
+			<fileset dir="${basedir}">
+				<include name="rm4es.dll" />
+				<include name="jRegistryKey.dll" />
+				<include name="app.ico" />
+				<include name="log4j.properties" />
+				<include name="setx.exe" />
+				<include name="Default.theme" />
+				<include name="r_reg.exe" />
+				<include name="RM4Es*.exe" />
+			</fileset>
+		</copy>
+
+		<copy todir="${build.target.dir}/doc">
+			<fileset dir="${doc.dir}">
+				<include name="*.chm" />
+			</fileset>
+		</copy>
+		<!-- <move file="${basedir}/${project.name}.jar" tofile="${build.target.dir}/${project.name}.jar" / -->
+		<copydir dest="${build.target.dir}/com/rm/config" src="${src.dir}/com/rm/config" />
+		<copydir dest="${build.target.dir}/com/rm/images" src="${src.dir}/com/rm/images" />
+		<echo> Prepare necessary files for building finished.</echo>
+	</target>
+
+	<target name="build_delivery">
+		<antcall target="jar_all" />
+		<antcall target="prepare_build" />		
+	</target>
+
+</project>
