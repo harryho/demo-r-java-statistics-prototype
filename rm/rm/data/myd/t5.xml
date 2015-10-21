@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_06" class="java.beans.XMLDecoder"> 
+ <object class="org.jgraph.graph.GraphLayoutCache"> 
+  <object class="com.rm.app.graph.RMModel"/> 
+  <object class="org.jgraph.graph.DefaultCellViewFactory"/> 
+  <boolean>true</boolean> 
+  <void property="localAttributes"> 
+   <void method="add"> 
+    <string>bounds</string> 
+   </void> 
+  </void> 
+  <void id="HashSet0" property="visibleSet"> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>SR</string> 
+     <void method="add"> 
+      <object id="DefaultPort0" class="org.jgraph.graph.DefaultPort"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object id="ImageIcon0" class="javax.swing.ImageIcon"> 
+        <string>file:/F:/ws/rm/rm/bin/com/rm/images/equation.jpg</string> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object id="Color0" class="java.awt.Color"> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>equation</string> 
+     </void> 
+     <void property="dataMap"> 
+      <void method="put"> 
+       <string>R Commands</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="name"> 
+         <string>R Commands</string> 
+        </void> 
+        <void property="type"> 
+         <string>textarea</string> 
+        </void> 
+        <void property="value"> 
+         <string>ccccccccccccccc</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+     <void property="id"> 
+      <string>SR_1227539506926</string> 
+     </void> 
+     <void property="key"> 
+      <string>equation.sr</string> 
+     </void> 
+     <void property="name"> 
+      <string>SR</string> 
+     </void> 
+     <void property="posX"> 
+      <double>221.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>190.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>SR</string> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>SR</string> 
+     <void method="add"> 
+      <object id="DefaultPort1" class="org.jgraph.graph.DefaultPort"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object idref="ImageIcon0"/> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>equation</string> 
+     </void> 
+     <void property="dataMap"> 
+      <void method="put"> 
+       <string>R Commands</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="name"> 
+         <string>R Commands</string> 
+        </void> 
+        <void property="type"> 
+         <string>textarea</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+     <void property="id"> 
+      <string>SR_1227539501161</string> 
+     </void> 
+     <void property="key"> 
+      <string>equation.sr</string> 
+     </void> 
+     <void property="name"> 
+      <string>SR</string> 
+     </void> 
+     <void property="posX"> 
+      <double>107.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>71.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>SR</string> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object id="DefaultPort2" class="org.jgraph.graph.DefaultPort"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort1"/> 
+   </void> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>SR</string> 
+     <void method="add"> 
+      <object idref="DefaultPort2"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object idref="ImageIcon0"/> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>equation</string> 
+     </void> 
+     <void property="dataMap"> 
+      <void method="put"> 
+       <string>R Commands</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="name"> 
+         <string>R Commands</string> 
+        </void> 
+        <void property="type"> 
+         <string>textarea</string> 
+        </void> 
+        <void property="value"> 
+         <string>aaaaaaaaaaaa</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+     <void property="id"> 
+      <string>SR_1227539502176</string> 
+     </void> 
+     <void property="key"> 
+      <string>equation.sr</string> 
+     </void> 
+     <void property="name"> 
+      <string>SR</string> 
+     </void> 
+     <void property="posX"> 
+      <double>303.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>77.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>SR</string> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort0"/> 
+   </void> 
+  </void> 
+  <void property="visibleSet"> 
+   <object idref="HashSet0"/> 
+  </void> 
+ </object> 
+</java> 

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_06" class="java.beans.XMLDecoder"> 
+ <object class="org.jgraph.graph.GraphLayoutCache"> 
+  <object class="com.rm.app.graph.RMModel"/> 
+  <object class="org.jgraph.graph.DefaultCellViewFactory"/> 
+  <boolean>true</boolean> 
+  <void id="HashSet0" property="visibleSet"> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>COM</string> 
+     <void method="add"> 
+      <object id="DefaultPort0" class="org.jgraph.graph.DefaultPort"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object id="ImageIcon0" class="javax.swing.ImageIcon"> 
+        <string>file:/F:/ws/rm/rm/bin/com/rm/images/explanation.jpg</string> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object id="Color0" class="java.awt.Color"> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bounds</string> 
+       <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+        <void property="height"> 
+         <double>67.0</double> 
+        </void> 
+        <void property="width"> 
+         <double>67.0</double> 
+        </void> 
+        <void property="x"> 
+         <double>180.0</double> 
+        </void> 
+        <void property="y"> 
+         <double>206.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>explanation</string> 
+     </void> 
+     <void property="dataMap"> 
+      <object id="HashMap0" class="java.util.HashMap"> 
+       <void method="put"> 
+        <string>R Commands</string> 
+        <object class="com.rm.app.graph.Attribute"> 
+         <void property="name"> 
+          <string>R Commands</string> 
+         </void> 
+         <void property="type"> 
+          <string>textarea</string> 
+         </void> 
+        </object> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="id"> 
+      <string>COM_1227454414770</string> 
+     </void> 
+     <void property="key"> 
+      <string>explanation.com</string> 
+     </void> 
+     <void property="name"> 
+      <string>COM</string> 
+     </void> 
+     <void property="posX"> 
+      <double>180.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>206.0</double> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort0"/> 
+   </void> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>COM</string> 
+     <void method="add"> 
+      <object id="DefaultPort1" class="org.jgraph.graph.DefaultPort"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object idref="ImageIcon0"/> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bounds</string> 
+       <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+        <void property="height"> 
+         <double>67.0</double> 
+        </void> 
+        <void property="width"> 
+         <double>67.0</double> 
+        </void> 
+        <void property="x"> 
+         <double>153.0</double> 
+        </void> 
+        <void property="y"> 
+         <double>57.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>explanation</string> 
+     </void> 
+     <void property="dataMap"> 
+      <object idref="HashMap0"/> 
+     </void> 
+     <void property="id"> 
+      <string>COM_1227454413317</string> 
+     </void> 
+     <void property="key"> 
+      <string>explanation.com</string> 
+     </void> 
+     <void property="name"> 
+      <string>COM</string> 
+     </void> 
+     <void property="posX"> 
+      <double>153.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>57.0</double> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort1"/> 
+   </void> 
+  </void> 
+  <void property="visibleSet"> 
+   <object idref="HashSet0"/> 
+  </void> 
+ </object> 
+</java> 

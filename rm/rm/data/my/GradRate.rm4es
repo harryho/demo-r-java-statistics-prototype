@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_12" class="java.beans.XMLDecoder"> 
+ <object class="org.jgraph.graph.GraphLayoutCache"> 
+  <object class="com.rm.app.graph.RMModel"/> 
+  <object class="org.jgraph.graph.DefaultCellViewFactory"/> 
+  <boolean>true</boolean> 
+  <void id="HashSet0" property="visibleSet"> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>OLSE</string> 
+     <void method="add"> 
+      <object id="DefaultPort0" class="org.jgraph.graph.DefaultPort"> 
+       <void id="HashSet1" property="edges"> 
+        <void method="add"> 
+         <object id="RMGraphEdge0" class="com.rm.app.graph.RMGraphEdge"> 
+          <void property="attributes"> 
+           <void method="put"> 
+            <string>linewidth</string> 
+            <float>1.0</float> 
+           </void> 
+           <void method="put"> 
+            <string>labelAlongEdge</string> 
+            <boolean>false</boolean> 
+           </void> 
+           <void method="put"> 
+            <string>lineEnd</string> 
+            <int>2</int> 
+           </void> 
+           <void method="put"> 
+            <string>lineBegin</string> 
+            <int>10</int> 
+           </void> 
+           <void method="put"> 
+            <string>lineStyle</string> 
+            <int>11</int> 
+           </void> 
+           <void method="put"> 
+            <string>points</string> 
+            <object class="java.util.ArrayList"> 
+             <void method="add"> 
+              <object class="org.jgraph.graph.AttributeMap$SerializablePoint2D"> 
+               <void property="x"> 
+                <double>-129.0</double> 
+               </void> 
+               <void property="y"> 
+                <double>-249.0</double> 
+               </void> 
+              </object> 
+             </void> 
+             <void method="add"> 
+              <object class="org.jgraph.graph.AttributeMap$SerializablePoint2D"> 
+               <void property="x"> 
+                <double>-119.0</double> 
+               </void> 
+               <void property="y"> 
+                <double>-239.0</double> 
+               </void> 
+              </object> 
+             </void> 
+            </object> 
+           </void> 
+           <void method="put"> 
+            <string>editable</string> 
+            <boolean>true</boolean> 
+           </void> 
+           <void method="put"> 
+            <string>routing</string> 
+            <object class="org.jgraph.graph.DefaultEdge$DefaultRouting"/> 
+           </void> 
+          </void> 
+          <void property="source"> 
+           <object idref="DefaultPort0"/> 
+          </void> 
+          <void property="sourceId"> 
+           <string>OLS_1239439759625</string> 
+          </void> 
+          <void property="sourceType"> 
+           <string>estimation</string> 
+          </void> 
+          <void property="target"> 
+           <object id="DefaultPort1" class="org.jgraph.graph.DefaultPort"> 
+            <void id="HashSet2" property="edges"> 
+             <void method="add"> 
+              <object idref="RMGraphEdge0"/> 
+             </void> 
+            </void> 
+            <void property="edges"> 
+             <object idref="HashSet2"/> 
+            </void> 
+           </object> 
+          </void> 
+          <void property="targetId"> 
+           <string>R-square_1239439761906</string> 
+          </void> 
+          <void property="targetType"> 
+           <string>evaluation</string> 
+          </void> 
+         </object> 
+        </void> 
+       </void> 
+       <void property="edges"> 
+        <object idref="HashSet1"/> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object class="javax.swing.ImageIcon"> 
+        <string>file:/F:/ws/rm/rm/bin/com/rm/images/estimation.jpg</string> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object id="Color0" class="java.awt.Color"> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bounds</string> 
+       <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+        <void property="height"> 
+         <double>62.0</double> 
+        </void> 
+        <void property="width"> 
+         <double>63.0</double> 
+        </void> 
+        <void property="x"> 
+         <double>137.0</double> 
+        </void> 
+        <void property="y"> 
+         <double>151.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>estimation</string> 
+     </void> 
+     <void property="id"> 
+      <string>OLS_1239439759625</string> 
+     </void> 
+     <void property="key"> 
+      <string>estimation.ols</string> 
+     </void> 
+     <void property="name"> 
+      <string>OLS</string> 
+     </void> 
+     <void property="posX"> 
+      <double>293.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>255.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>OLSE</string> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object idref="RMGraphEdge0"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort0"/> 
+   </void> 
+   <void method="add"> 
+    <object idref="DefaultPort1"/> 
+   </void> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>R-square</string> 
+     <void method="add"> 
+      <object idref="DefaultPort1"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object class="javax.swing.ImageIcon"> 
+        <string>file:/F:/ws/rm/rm/bin/com/rm/images/evaluation.jpg</string> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bounds</string> 
+       <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+        <void property="height"> 
+         <double>64.0</double> 
+        </void> 
+        <void property="width"> 
+         <double>66.0</double> 
+        </void> 
+        <void property="x"> 
+         <double>318.0</double> 
+        </void> 
+        <void property="y"> 
+         <double>151.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>evaluation</string> 
+     </void> 
+     <void property="dataMap"> 
+      <void method="put"> 
+       <string>ATTR_EVALUATION_LOG_FUNCTION</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="discription"> 
+         <string></string> 
+        </void> 
+        <void property="displayOrder"> 
+         <int>1</int> 
+        </void> 
+        <void property="id"> 
+         <string>ATTR_EVALUATION_LOG_FUNCTION</string> 
+        </void> 
+        <void property="name"> 
+         <string>Logic Function</string> 
+        </void> 
+        <void property="type"> 
+         <string>textfield</string> 
+        </void> 
+        <void property="value"> 
+         <string>&gt;0.60</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+     <void property="id"> 
+      <string>R-square_1239439761906</string> 
+     </void> 
+     <void property="key"> 
+      <string>evaluation.rsquare</string> 
+     </void> 
+     <void property="name"> 
+      <string>R-square</string> 
+     </void> 
+     <void property="posX"> 
+      <double>339.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>153.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>R-square</string> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+  <void property="visibleSet"> 
+   <object idref="HashSet0"/> 
+  </void> 
+ </object> 
+</java> 

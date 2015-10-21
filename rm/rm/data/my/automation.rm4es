@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_06" class="java.beans.XMLDecoder"> 
+ <object class="org.jgraph.graph.GraphLayoutCache"> 
+  <object class="com.rm.app.graph.RMModel"/> 
+  <object class="org.jgraph.graph.DefaultCellViewFactory"/> 
+  <boolean>true</boolean> 
+  <void id="HashSet0" property="visibleSet"> 
+   <void method="add"> 
+    <object id="DefaultPort0" class="org.jgraph.graph.DefaultPort"/> 
+   </void> 
+   <void method="add"> 
+    <object class="com.rm.app.graph.RMGraphCell"> 
+     <string>Selecting Data</string> 
+     <void method="add"> 
+      <object idref="DefaultPort0"/> 
+     </void> 
+     <void property="attributes"> 
+      <void method="put"> 
+       <string>opaque</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="put"> 
+       <string>icon</string> 
+       <object class="javax.swing.ImageIcon"> 
+        <string>file:/D:/workspace/RM/bin/com/rm/images/dataModel.jpg</string> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>gradientColor</string> 
+       <object id="Color0" class="java.awt.Color"> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+        <int>255</int> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>backgroundColor</string> 
+       <object idref="Color0"/> 
+      </void> 
+      <void method="put"> 
+       <string>bounds</string> 
+       <object class="org.jgraph.graph.AttributeMap$SerializableRectangle2D"> 
+        <void property="height"> 
+         <double>68.0</double> 
+        </void> 
+        <void property="width"> 
+         <double>71.0</double> 
+        </void> 
+        <void property="x"> 
+         <double>77.0</double> 
+        </void> 
+        <void property="y"> 
+         <double>78.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>bordercolor</string> 
+       <object idref="Color0"/> 
+      </void> 
+     </void> 
+     <void property="classifierKey"> 
+      <string>dataModel</string> 
+     </void> 
+     <void property="dataMap"> 
+      <void method="put"> 
+       <string>ATTR_DATA_MODEL_DATA_LOCATION</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="displayOrder"> 
+         <int>1</int> 
+        </void> 
+        <void property="id"> 
+         <string>ATTR_DATA_MODEL_DATA_LOCATION</string> 
+        </void> 
+        <void property="name"> 
+         <string>Location</string> 
+        </void> 
+        <void property="type"> 
+         <string>textfield</string> 
+        </void> 
+        <void property="value"> 
+         <string>sem</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="put"> 
+       <string>ATTR_DATA_MODEL_DATA_NAME</string> 
+       <object class="com.rm.app.graph.Attribute"> 
+        <void property="displayOrder"> 
+         <int>3</int> 
+        </void> 
+        <void property="id"> 
+         <string>ATTR_DATA_MODEL_DATA_NAME</string> 
+        </void> 
+        <void property="name"> 
+         <string>Data name</string> 
+        </void> 
+        <void property="type"> 
+         <string>textfield</string> 
+        </void> 
+        <void property="value"> 
+         <string>Klein</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+     <void property="fromDataCache"> 
+      <string>N</string> 
+     </void> 
+     <void property="id"> 
+      <string>SLD_1241706483078</string> 
+     </void> 
+     <void property="key"> 
+      <string>dataModel.selectData</string> 
+     </void> 
+     <void property="name"> 
+      <string>SLD</string> 
+     </void> 
+     <void property="posX"> 
+      <double>77.0</double> 
+     </void> 
+     <void property="posY"> 
+      <double>78.0</double> 
+     </void> 
+     <void property="viewLabel"> 
+      <string>Selecting Data</string> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+  <void property="visibleSet"> 
+   <object idref="HashSet0"/> 
+  </void> 
+ </object> 
+</java> 

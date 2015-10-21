@@ -1,0 +1,49 @@
+School	StudentFacultyRatio	AlumniGivingRate
+Boston College	13	25
+Brandeis University	8	33
+Brown University	8	40
+California Institute of Technology	3	46
+Carnegie Mellon University	10	28
+Case Western Reserve Univ.	8	31
+College of William and Mary	12	27
+Columbia University	7	31
+Cornell University	13	35
+Dartmouth College	10	53
+Duke University	8	45
+Emory University	7	37
+Georgetown University	10	29
+Harvard University	8	46
+John Hopkins University	9	27
+Lehigh University	11	40
+Massachusetts Inst. of Technology	6	44
+New York University	13	13
+Northwestern University	8	30
+Pennsylvania State Univ.	19	21
+Princeton University	5	67
+Rice University	8	40
+Stanford University	7	34
+Tufts University	9	29
+Tulane University	12	17
+U. of California-Berleley	17	18
+U. of California-Davis	19	7
+U. of California-Irvine	20	9
+U. of California-Los Angeles	18	13
+U. of California-San Diego	19	8
+U. of California-Santa Barbara	20	12
+U. of Chicago	4	36
+U. of Florida	23	19
+U. of Illinois-Urbana Champaign	15	23
+U. of Michigan-Ann Arbor	15	13
+U. of North Carolina-Chapel Hill	16	26
+U. of Notre Dame	13	49
+U. of Pennsylvania	7	41
+U. of Rochester	10	23
+U. of Southern California	13	22
+U. of Texas-Austin	21	13
+U. of Virginia	13	28
+U. of Washington	12	12
+U. of Wisconsin-Madison	13	13
+Vanderbuilt University	9	31
+Wake Forest University	11	38
+Washington University-St. Louis	7	33
+Yale University	7	50
